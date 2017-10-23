@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="8px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>downarrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main" transform="translate(-1493.000000, -567.000000)" fill="#C7C7C7">
+            <g id="Group-4-Copy" transform="translate(768.000000, 305.000000)">
+                <g id="Group-12" transform="translate(723.000000, 0.000000)">
+                    <g id="Group-11" transform="translate(0.000000, 70.000000)">
+                        <g id="Group-9" transform="translate(2.000000, 184.000000)">
+                            <path d="M11.0536637,14.3740155 L5.95016094,8.91151986 C5.85221399,8.81576659 5.72301729,8.77472948 5.59521983,8.78384884 C5.46788879,8.77472948 5.33869209,8.81576659 5.24074514,8.91151986 L0.136775927,14.3740155 C-0.0455919757,14.5564027 -0.0455919757,14.8436625 0.136775927,15.0260497 C0.320076658,15.2038772 0.616716009,15.2038772 0.799083912,15.0260497 L5.59521983,9.89185089 L10.3918222,15.0260497 C10.5741901,15.2038772 10.8708294,15.2038772 11.0536637,15.0260497 C11.2364981,14.8436625 11.2364981,14.5564027 11.0536637,14.3740155" id="downarrow" transform="translate(5.595395, 11.971014) scale(1, -1) translate(-5.595395, -11.971014) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

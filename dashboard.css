@@ -188,7 +188,117 @@ a.article, a.article:hover {
 
 }
 
+label{
+    font-size: 14px;
+    font-weight: normal;
+}
 
+form input, form textarea {
+    line-height: normal;
+    padding: 9px 10px 9px 8px;
+    border-radius: 5.6px;
+    background-color: #ffffff;
+    -ms-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+    -o-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+    border: solid 1px rgba(154, 173, 192, 0.13);
+    font-size: 14px;
+    /* letter-spacing: 0.4px; */
+    width: 100%;
+    -webkit-appearance: none;
+    color: rgba(60, 65, 68, 0.8);
+}
+
+select {
+    border-radius: 5.6px;
+    background-color: #ffffff;
+    -ms-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+    -o-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+    border: solid 1px rgba(154, 173, 192, 0.13);
+    font-size: 14px;
+    /* letter-spacing: 0.4px; */
+    color: rgba(60, 65, 68, 0.8);
+    width: 100%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 9px 15px 8px 11px;
+    background-image: url(./downarrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+.control {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.control-indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+}
+
+.control-indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+    box-sizing: content-box;
+}
+
+.control-checkbox .control-indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.control input:checked ~ .control-indicator:after {
+    display: block;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    left: 0;
+}
+
+.control input:checked ~ .control-indicator {
+    background: #7386D5;
+}
+
+.control-radio .control-indicator:after {
+    left: 7px;
+    top: 7px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.control-radio .control-indicator {
+    border-radius: 50%;
+}
+
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -198,6 +308,7 @@ a.article, a.article:hover {
     min-height: 100vh;
     transition: all 0.3s;
     width: 100%;
+    color: #999;
 }
 
 /* -------------------------------------------------
