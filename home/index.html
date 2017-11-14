@@ -12,6 +12,7 @@
     <link href="css/devices.min.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/animate.css" rel="stylesheet" type="text/css" />
+	<link href="css/tab.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="img/favicon.ico" />
   	<title>demo site</title>
 </head>
@@ -681,7 +682,7 @@
                 <div class="swiper-arrow-gallery right default-arrow"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
             </div>
 
-            <!-- BLOCK "TYPE 7" -->
+    <!-- BLOCK "TYPE 7" -->
             <div class="block type-7 scroll-to-block" data-id="contact">
                 <div class="container">
                     <div class="row page-tagline">
@@ -810,7 +811,97 @@
         <div class="open"><img src="img/gear-icon.png" alt=""><img src="img/gear-icon.png" alt=""><img src="img/gear-icon.png" alt=""></div>
     </div>
     
-    
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        
+           
+            <div class="modal-body">
+			<div class="modal-content"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×</button>
+                <div class="row">
+                    <div class="head">
+		<div class="logo">
+			<div class="logo-top">
+				<h1>Static Login Form</h1>
+			</div>
+			<div class="logo-bottom">
+				<section class="sky-form">									
+					<label class="radio"><input type="radio" name="radio" checked=""><i></i>Ut mattis mattis bibendum</label>
+					<label class="radio"><input type="radio" name="radio"><i></i>Nullam rutrum sagittis interdum</label>										
+					<label class="radio"><input type="radio" name="radio"><i></i>Nam cursus eros sed elit</label>
+				</section>
+			</div>
+		</div>		
+		<div class="login">
+			<div class="sap_tabs">
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+					<ul class="resp-tabs-list">
+						<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Login</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><label>/</label><span>Sign up</span></li>
+						<div class="clearfix"></div>
+					</ul>				  	 
+					<div class="resp-tabs-container">
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+							<div class="login-top">
+								<form>
+									<input type="text" class="email" placeholder="Email" required=""/>
+									<input type="password" class="password" placeholder="Password" required=""/>		
+								</form><br>
+								<div class="login-bottom login-bottom1">
+									<div class="submit">
+										<input type="submit" value="LOGIN"/>
+									</div>
+									<div style="width:100%; float:left;">
+									<ul style="margin-top: 12px; float: left;">
+										<li><p>Or login with</p></li>
+										<li><a href="#"><span class="fb"></span></a></li>
+										<li><a href="#"><span class="twit"></span></a></li>
+										<li><a href="#"><span class="google"></span></a></li>
+									</ul>
+									</div>
+									<div class="clear"></div>
+								</div>	
+							</div>
+						</div>
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+						<div class="login-top">
+								<form>
+									<input type="text" class="name active" placeholder="Your Name" required=""/>
+									<input type="text" class="email" placeholder="Email" required=""/>
+									<input type="password" class="password" placeholder="Password" required=""/>		
+								</form>
+								<br>
+								<div class="login-bottom">
+									<div class="submit">
+										<input type="submit" value="SIGN UP"/>
+									</div>
+									<div style="width:100%; float:left;">
+									<ul style="margin-top: 12px; float: left;">
+										<li><p>Or login with</p></li>
+										<li><a href="#"><span class="fb"></span></a></li>
+										<li><a href="#"><span class="twit"></span></a></li>
+										<li><a href="#"><span class="google"></span></a></li>
+									</ul>
+									</div>
+									<div class="clear"></div>
+								</div>	
+							</div>
+							
+						</div>							
+					</div>	
+				</div>
+			</div>	
+		</div>	
+		<div class="clear"></div>
+	</div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            
 
   <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -892,10 +983,21 @@
                 });
             });
         });
+		$('#myModal').modal('show');
     </script>
     <script src="js/subscription.js"></script>
 
-
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+		    <script type="text/javascript">
+			    $(document).ready(function () {
+			        $('#horizontalTab').easyResponsiveTabs({
+			            type: 'default', //Types: default, vertical, accordion           
+			            width: 'auto', //auto or any width like 600px
+			            fit: true   // 100% fit in a container
+			        });
+			    });
+				
+</script>
 </body>
 
 </html>
