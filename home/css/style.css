@@ -195,7 +195,7 @@ ul li:after{position: absolute; left: 0px; top: 12px; background: #fbc011; width
 .swiper-active-switch{background: #fbc011; height:23px;}
 /*form styles*/
 form{position: relative; float: left; width: 100%;}
-input[type="text"], input[type="email"], select, textarea{background:#f8f8f8; border: 0px; height: 43px; line-height: 43px; padding: 0px 15px; color: #777777; font-size: 14px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 45%; margin: 14px 2%; border: 1px transparent solid;}
+input[type="text"], input[type="email"], select, textarea{background:#transparent; border: 0px; height: 43px; line-height: 43px; padding: 0px 15px; color: #777777; font-size: 14px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 45%; margin: 14px 2%; border-bottom: 2px solid #ccc; }
 textarea{width: 94%; height: 125px;}
 ::-webkit-input-placeholder {color:#777777;}
 :-moz-placeholder {color:#777777; opacity: 1;}
@@ -264,8 +264,8 @@ header.act #logo{background:#fff; margin-top: 27px;}
 header.act #logo img{opacity:0;}
 header.act #logo img.act{opacity:1;}
 header.act nav a{color:#777777; margin-top: 15px; margin-bottom: 15px;}
-header.act nav a:hover{background:#fbc011; color: #fff;}
-header.act nav a.act{background:#fbc011; color:#fff;}
+header.act nav a:hover{background:#fbc011; color: #00bbd2}
+header.act nav a.act{background:#fbc011; color:#00bbd2;}
 header.act nav ul ul{top: 69px;}
 header.act nav ul ul li a{margin: 0px;}
 .mob-icon{display: none;}

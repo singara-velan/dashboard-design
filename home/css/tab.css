@@ -1,4 +1,36 @@
-
+@font-face {
+    font-family: 'black';
+    src: url('../fonts/proximanova-black-webfont.eot');
+    src: url('../fonts/proximanova-black-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-black-webfont.html') format('woff2'),
+         url('../fonts/proximanova-black-webfont.woff') format('woff'),
+         url('../fonts/proximanova-black-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-black-webfont.svg#proxima_novablack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bold';
+    src: url('../fonts/proximanova-extrabold-webfont.eot');
+    src: url('../fonts/proximanova-extrabold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-extrabold-webfont.html') format('woff2'),
+         url('../fonts/proximanova-extrabold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-extrabold-webfont.svg#proxima_novaextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regular-webfont.html') format('woff2'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 table{border-collapse:collapse;border-spacing:0;}
 /* start editing from here */
 a{text-decoration:none;}
@@ -21,7 +53,7 @@ img{max-width:100%;}
     font-size: 2.4em;
     color: #fff;
     text-align: center;
-    font-family: 'PoiretOne-Regular';
+    
 }
 .logo-bottom {
     margin-top: 8.5%;
@@ -130,7 +162,7 @@ color: #fff;}
     -o-border-radius: 20px;
     -ms-border-radius: 20px;
     padding: 6px 13px;
-    font-family: 'SourceSansPro-Regular';
+    font-family: 'regular', sans-serif;
 }
 .submit input[type="submit"]:hover{
 	background:#44c7f4;
